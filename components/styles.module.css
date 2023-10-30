@@ -1,0 +1,37 @@
+.gradient-header {
+      background-image: linear-gradient(180deg, #BD2C26 0.09%, #FFF 179.37%);
+}
+.border-corners {
+  padding: 1em;
+  border: 3px solid;
+  width:50px;
+  height:50px;
+  position: relative;
+}
+
+.border-corners::before,
+.border-corners::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+
+.border-corners::before {
+  top: -0.3em;
+  bottom: -0.3em;
+  left: 1em;
+  right: 1em;
+}
+
+.border-corners::after {
+  left: -0.3em;
+  right: -0.3em;
+  top: 1em;
+  bottom: 1em;
+}
+
+.border-corners .heading {
+  position: relative;
+  z-index: 1;
+}
